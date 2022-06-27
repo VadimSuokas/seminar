@@ -9,3 +9,6 @@
     int result = sotni * 10 + ed;
     return result;
 }
+
+int number = CutNumber();
+Console.Write(" Result number is " + number); 
