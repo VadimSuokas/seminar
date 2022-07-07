@@ -1,6 +1,6 @@
 ﻿// Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. Найдите сумму положительных элементов массива.
 
-/*
+
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
     int[] newArray = new int[size]; // Инициализирует массив newArray
@@ -10,7 +10,7 @@ int[] CreateRandomArray(int size, int minValue, int maxValue)
     return newArray;
 }
 */
-/*
+
 int[] CreateArray(int size)
 {
     int[] newArray = new int[size]; 
@@ -26,7 +26,7 @@ int[] CreateArray(int size)
 */
 
 // Печать массива
-/*
+
 void ShowArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -34,10 +34,10 @@ void ShowArray(int[] array)
 
     Console.WriteLine();
 }
-*/
+
 
 //Печать массива
-/*
+
 Console.Write("Input size of array: ");
 int size = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input min possible value of elements: ");
@@ -50,7 +50,6 @@ int[] array2 = CreateArray(size);
 
 ShowArray(array1);
 ShowArray(array2);
-*/
 
 int FindPositivSum(int[] array)
 {
@@ -63,3 +62,8 @@ int FindPositivSum(int[] array)
 int[] array1 = CreateRandomArray(size, min, max);
 int sum = FindPositivSum(array);
 Console.WriteLine("Sum of positive elements in current" + sum);
+
+
+//Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
+
+//Задайте одномерный массив из 20 случайных чисел. Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
