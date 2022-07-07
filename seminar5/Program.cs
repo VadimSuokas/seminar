@@ -26,7 +26,7 @@ int[] CreateArray(int size)
 */
 
 // Печать массива
-
+/*
 void ShowArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -34,3 +34,19 @@ void ShowArray(int[] array)
 
     Console.WriteLine();
 }
+*/
+
+//Печать массива
+Console.Write("Input size of array: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input min possible value of elements: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input max possible value of elements: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] array1 = CreateRandomArray(size, min, max);
+int[] array2 = CreateArray(size);
+
+ShowArray(array1);
+ShowArray(array2);
+
