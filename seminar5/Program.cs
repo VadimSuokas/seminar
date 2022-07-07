@@ -10,6 +10,7 @@ int[] CreateRandomArray(int size, int minValue, int maxValue)
     return newArray;
 }
 */
+/*
 int[] CreateArray(int size)
 {
     int[] newArray = new int[size]; 
@@ -21,4 +22,15 @@ int[] CreateArray(int size)
     }
     Console.WriteLine();
     return newArray;
+}
+*/
+
+// Печать массива
+
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
 }
