@@ -37,6 +37,7 @@ void ShowArray(int[] array)
 */
 
 //Печать массива
+/*
 Console.Write("Input size of array: ");
 int size = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input min possible value of elements: ");
@@ -49,4 +50,16 @@ int[] array2 = CreateArray(size);
 
 ShowArray(array1);
 ShowArray(array2);
+*/
 
+int FindPositivSum(int[] array)
+{
+    int sum = 0;
+
+    for(int i = 0; i < array.Length; i++)
+        if(array[i > 0]) sum += array[i];
+    return sum;
+}
+int[] array1 = CreateRandomArray(size, min, max);
+int sum = FindPositivSum(array);
+Console.WriteLine("Sum of positive elements in current" + sum);
