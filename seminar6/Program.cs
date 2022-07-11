@@ -1,4 +1,5 @@
 ﻿// Напишите программу, которая перевернёт одномерный массив (последний элемент будет на первом месте, а первый - на последнем и т.д.)
+/*
 int[] ReverseArray(int[] array)
 {
     int LastIndex = array.Length - 1;
@@ -22,7 +23,7 @@ int[] ReverseArray(int[] array)
         j--;
 
     }
-*/
+
     return array;
 }
 
@@ -32,4 +33,21 @@ myArray = ReverseArray(myArray);
 
 for(int i = 0; i < myArray.Length; i++)
     ConsoleWrite(myArray[i] + " ");
-    
+*/
+
+// Перевод числа в двоичное значение
+// 18 / 2 -> 9 0
+// 9 / 2 -> 6 1
+
+
+
+string ChangeDigitSystem (int num)
+{
+    string resultNumber = string.Empty;
+
+    while(num > 0)
+    {
+        resultNumber = num % 2 + resultNumber;
+        num /= 2; // num = num / 2;
+    }
+}
